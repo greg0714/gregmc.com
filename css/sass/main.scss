@@ -1,0 +1,155 @@
+$mainFontFamily: Roboto, Helvetica, sans-serif;
+$red: #F93943;
+$blue: #445E93;
+$tan: #FCB0B3;
+$tan: #FCECC9;
+$tanBorder: 1px solid #ECDDBA;
+$lightblue: #7EB2DD;
+
+$headerHeight: 8vh;
+$footerHeight: 4vh;
+
+@import "reset";
+
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto), local(Roboto-Regular), url(/fonts/Roboto/Roboto-Regular) format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+
+* {
+    font-family: $mainFontFamily;
+}
+h1 {
+    font-size: 150%;
+}
+h2 {
+    font-size: 140%;
+}
+h3 {
+    font-size: 130%;
+}
+h4 {
+    font-size: 120%;
+}
+h5 {
+    font-size: 110%;
+}
+
+
+header, footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    max-height: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding: 0 1rem;
+    background-color: $tan;
+    color: $blue;
+    height: $headerHeight;
+    border-bottom: $tanBorder;
+
+    a > h1 {
+        display: inline-block;
+        color: $blue;
+    }
+    .menuIcon {
+        padding: 1rem;
+        margin-right: 1rem;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    header {
+        height: $headerHeight * 0.75;
+    }
+    #pagecontent article {
+        padding-top: $headerHeight * 0.75;;
+    }
+    h1 {
+        font-size: 200%;
+    }
+    h2 {
+        font-size: 180%;
+    }
+    h3 {
+        font-size: 160%;
+    }
+    h4 {
+        font-size: 140%;
+    }
+    h5 {
+        font-size: 120%;
+    }
+}
+
+.menuIcon {
+    display: inline-block;
+    cursor: pointer;
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: $blue;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+}
+    
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#pagecontainer {
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+}
+#pagecontent {
+    padding-bottom: $footerHeight;
+
+    article {
+        padding-top: $headerHeight;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: $tan;
+    border-top: $tanBorder;
+    height: $footerHeight;
+    color: $blue;
+
+    p {
+        padding-left: 1rem;
+    }
+}
+
+.underConstruction {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 1rem 0;
+
+    img {
+        max-height: 50%;
+        max-width: 50%;
+    }
+}

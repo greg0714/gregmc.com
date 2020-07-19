@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto), local(Roboto-Regular), url(/fonts/Roboto/Roboto-Regular) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+* {
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+h2 {
+  font-size: 140%;
+}
+
+h3 {
+  font-size: 130%;
+}
+
+h4 {
+  font-size: 120%;
+}
+
+h5 {
+  font-size: 110%;
+}
+
+header, footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 50px;
+  max-height: 100px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  padding: 0 1rem;
+  background-color: #FCECC9;
+  color: #445E93;
+  height: 8vh;
+  border-bottom: 1px solid #ECDDBA;
+}
+header a > h1 {
+  display: inline-block;
+  color: #445E93;
+}
+header .menuIcon {
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 721px) {
+  header {
+    height: 6vh;
+  }
+
+  #pagecontent article {
+    padding-top: 6vh;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 180%;
+  }
+
+  h3 {
+    font-size: 160%;
+  }
+
+  h4 {
+    font-size: 140%;
+  }
+
+  h5 {
+    font-size: 120%;
+  }
+}
+.menuIcon {
+  display: inline-block;
+  cursor: pointer;
+}
+.menuIcon .bar1, .menuIcon .bar2, .menuIcon .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #445E93;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#pagecontainer {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+}
+
+#pagecontent {
+  padding-bottom: 4vh;
+}
+#pagecontent article {
+  padding-top: 8vh;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #FCECC9;
+  border-top: 1px solid #ECDDBA;
+  height: 4vh;
+  color: #445E93;
+}
+footer p {
+  padding-left: 1rem;
+}
+
+.underConstruction {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+.underConstruction img {
+  max-height: 50%;
+  max-width: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */
