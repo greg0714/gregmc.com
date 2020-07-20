@@ -114,35 +114,6 @@ header .menuIcon {
   margin-left: auto;
 }
 
-@media screen and (min-width: 721px) {
-  header {
-    height: 6vh;
-  }
-
-  #pagecontent article {
-    padding-top: 6vh;
-  }
-
-  h1 {
-    font-size: 200%;
-  }
-
-  h2 {
-    font-size: 180%;
-  }
-
-  h3 {
-    font-size: 160%;
-  }
-
-  h4 {
-    font-size: 140%;
-  }
-
-  h5 {
-    font-size: 120%;
-  }
-}
 .menuIcon {
   display: inline-block;
   cursor: pointer;
@@ -176,7 +147,7 @@ header .menuIcon {
 }
 
 #pagecontent {
-  padding-bottom: 4vh;
+  padding-bottom: 150px;
 }
 #pagecontent article {
   padding-top: 8vh;
@@ -203,6 +174,41 @@ footer p {
 .underConstruction img {
   max-height: 50%;
   max-width: 50%;
+}
+
+@media screen and (min-width: 721px) {
+  header {
+    height: 6vh;
+  }
+
+  #pagecontent article {
+    padding-top: 50px;
+  }
+
+  h1 {
+    font-size: 200%;
+  }
+
+  h2 {
+    font-size: 180%;
+  }
+
+  h3 {
+    font-size: 160%;
+  }
+
+  h4 {
+    font-size: 140%;
+  }
+
+  h5 {
+    font-size: 120%;
+  }
+}
+@media screen and (min-height: 700px) {
+  #pagecontent {
+    padding-bottom: 12vh;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
