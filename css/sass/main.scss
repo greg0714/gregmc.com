@@ -7,6 +7,7 @@ $tanBorder: 1px solid #ECDDBA;
 $lightblue: #7EB2DD;
 
 $headerHeight: 8vh;
+$minHeaderFooterHeight: 50px;
 $footerHeight: 4vh;
 
 @import "reset";
@@ -43,7 +44,7 @@ header, footer {
     display: flex;
     align-items: center;
     width: 100%;
-    min-height: 50px;
+    min-height: $minHeaderFooterHeight;
     max-height: 100px;
 }
 
@@ -130,11 +131,7 @@ footer {
     }
 }
 
-
 @media screen and (min-width: 721px) {
-    header {
-        height: $headerHeight * 0.75;
-    }
     h1 {
         font-size: 200%;
     }
@@ -154,9 +151,12 @@ footer {
 
 @media screen and (min-height: 700px) {
     #pagecontent {
-        padding-bottom: $headerHeight + $footerHeight;
+        padding-bottom: $minHeaderFooterHeight * 2;
     }
     #pagecontent article {
-        padding-top: 50px;
+        padding-top: $minHeaderFooterHeight;
+    }
+    header {
+        height: $headerHeight * 0.75;
     }
 }
