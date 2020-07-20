@@ -150,7 +150,7 @@ header .menuIcon {
   padding-bottom: 150px;
 }
 #pagecontent article {
-  padding-top: 8vh;
+  padding-top: 50px;
 }
 
 footer {
@@ -203,7 +203,7 @@ footer p {
   }
 
   #pagecontent article {
-    padding-top: 50px;
+    padding-top: 8vh;
   }
 
   header {

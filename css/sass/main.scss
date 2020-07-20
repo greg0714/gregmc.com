@@ -102,7 +102,7 @@ header {
     padding-bottom: 150px;
 
     article {
-        padding-top: $headerHeight;
+        padding-top: $minHeaderFooterHeight;
     }
 }
 
@@ -154,7 +154,7 @@ footer {
         padding-bottom: $minHeaderFooterHeight * 2;
     }
     #pagecontent article {
-        padding-top: $minHeaderFooterHeight;
+        padding-top: $headerHeight;
     }
     header {
         height: $headerHeight * 0.75;
